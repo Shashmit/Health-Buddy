@@ -6,8 +6,9 @@ const mongoose = require("mongoose");
 
 //express app
 const app = express();
-//middleware
 app.use(express.json());
+//middleware
+
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
