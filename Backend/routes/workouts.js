@@ -15,6 +15,7 @@ router.get("/:id", getSpecificWorkout);
 router.post("/", createWorkout);
 //Delete a workout
 router.delete("/:id", deleteWorkout);
+//Update a route
 router.patch("/:id", updateWorkout);
 
 module.exports = router;
